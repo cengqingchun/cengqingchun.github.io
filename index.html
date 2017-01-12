@@ -116,9 +116,33 @@ am-avg-md-3 am-avg-lg-4 am-gallery-overlay" data-am-gallery="{ pureview: true }"
 
 <script src="js/jquery.min.js"></script>
 <script src="js/amazeui.js"></script>
-<script src="js/my.js"></script>
+<script >
+var count=6;
 
 
-</div>
+$(function(){
+	
+	for (var i=count;i>0;i--)
+	{
+	
+		var li=' <li>'+
+			' <div class="am-gallery-item">'+
+			' <a href="images/'+i+'.jpg" class="">'+
+			' <img src="images/'+i+'.jpg"  alt="第'+i+'天"/>'+
+			' <h3 class="am-gallery-title">第'+i+'天</h3>'+
+			' <div class="am-gallery-desc">第'+i+'天</div>'+
+			' </a>'+
+			' </div>'+
+			' </li>';
+		
+		$("#mainUl").append(li);
+		
+	}
+	
+});
+
+</script>
+
+
 </body>
 </html>
