@@ -1,68 +1,124 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=640">
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>我的宝贝</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta content="telephone=no" name="format-detection" />
+<meta name="description" content="">
+<meta name="author" content="">
+<meta name="renderer" content="webkit">
 
-    <link rel="stylesheet" href="stylesheets/core.css" media="screen">
-    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
-    <link rel="stylesheet" href="stylesheets/github-light.css">
+<link rel="stylesheet" href="http://cdn.amazeui.org/amazeui/2.5.0/css/amazeui.min.css" />
+<style>
+	.middle-img {
+		position: absolute;
+		left: 259px;
+		top: 0px;
+		width: 40px;
+	}
 
-    <script type="text/javascript" src="javascripts/modernizr.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $('#main_content').headsmart()
-      })
-    </script>
-    <title>马雷的个人主页 by zziamalei</title>
-  </head>
+	.up-img {
+		position: absolute;
+		top: -40px;
+		left: 261px;
+		width: 40px;
+	}
 
-  <body>
-    <a id="forkme_banner" href="https://github.com/zziamalei">View on GitHub</a>
-    <div class="shell">
+	.down-img {
+		position: absolute;
+		top: 40px;
+		left: 257px;
+		width: 40px;
+	}
 
-      <header>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <h1>马雷的个人主页</h1>
-            <h2></h2>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-      </header>
+	.left-img {
+		position: absolute;
+		left: 218px;
+		width: 40px;
+	}
 
-      <div id="no-downloads">
-        <span class="inner">
-        </span>
-      </div>
+	.right-img {
+		position: absolute;
+		left: 300px;
+		width: 40px;
+	}
+	@media screen and (max-width:450px) {
+		.middle-img {
+			position: absolute;
+			left: 259px;
+			top: 0px;
+			width: 40px;
+			display: none;
+		}
+
+		.up-img {
+			position: absolute;
+			top: -40px;
+			left: 261px;
+			width: 40px;
+			display: none;
+		}
+
+		.down-img {
+			position: absolute;
+			top: 40px;
+			left: 257px;
+			width: 40px;
+			display: none;
+		}
+
+		.left-img {
+			position: absolute;
+			left: 218px;
+			width: 40px;
+			display: none;
+		}
+
+		.right-img {
+			position: absolute;
+			left: 300px;
+			width: 40px;
+			display: none;
+		}
+
+		.rotate_jia{
+			display: none;
+		}.rotate_div{
+			display: none;
+		}.rotate_jian{
+			display: none;
+		}
+	}
+</style>
+</head>
+<body>
+<ul id="mainUl" data-am-widget="gallery" class="am-gallery am-avg-sm-2
+am-avg-md-3 am-avg-lg-4 am-gallery-overlay" data-am-gallery="{ pureview: true }" >
+<!-- <li>
+	<div class="am-gallery-item">
+		<a href="images/1.jpg" class="">
+			<img src="images/1.jpg"  alt="远方 有一个地方 那里种有我们的梦想"/>
+			<h3 class="am-gallery-title">远方 有一个地方 那里种有我们的梦想</h3>
+			<div class="am-gallery-desc">2375-09-26</div>
+		</a>
+	</div>
+</li> -->
 
 
-      <span class="banner-fix"></span>
+</ul>
 
 
-      <section id="main_content">
-        <h1>
-<a id="zziamaleigithubio" class="anchor" href="#zziamaleigithubio" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>zziamalei.github.io</h1>
-      </section>
 
-      <footer>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <p>Projects by <a href="https://github.com/zziamalei">zziamalei</a> can be found on <a href="https://github.com/zziamalei">GitHub</a></p>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-        <p>Generated with <a href="https://pages.github.com">GitHub Pages</a> using Merlot</p>
-        <span class="octocat"></span>
-      </footer>
+<script src="js/jquery.min.js"></script>
+<script src="js/amazeui.js"></script>
+<script src="js/my.js"></script>
 
-    </div>
 
-    
-  </body>
+</div>
+</body>
 </html>
